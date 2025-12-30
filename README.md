@@ -118,7 +118,6 @@ Configure the GRUB bootloader to tell the kernel where to resume from. This is a
     ```
     GRUB_CMDLINE_LINUX_DEFAULT="quiet splash resume=UUID=0d29f6c9... resume_offset=4546994 systemd.zram=0"
     ```
-    * if it doesn't work add `zswap.enabled=1` in the above line before `systemd.zram=0`.
 3.  Save the file and regenerate the GRUB config:
 
     ```bash
